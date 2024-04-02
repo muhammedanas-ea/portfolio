@@ -1,8 +1,6 @@
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
-import { FaReact,FaNodeJs } from "react-icons/fa";
-
-
+import { FaReact, FaNodeJs } from "react-icons/fa";
 
 const Skills = () => {
   const skillsData = [
@@ -17,22 +15,22 @@ const Skills = () => {
       color: "#e34c26",
       width: "80%",
       skill: "Express",
-      icon: <SiExpress  size={70} color="#68a063" />,
-      delay: 0.8,
+      icon: <SiExpress size={70} color="#68a063" />,
+      delay: 0.6,
     },
     {
       color: "#e34c26",
       width: "80%",
       skill: "React",
       icon: <FaReact size={70} color="#61dbfb" />,
-      delay: 1.1,
+      delay: 0.7,
     },
     {
       color: "#e34c26",
       width: "80%",
       skill: "Node.js",
       icon: <FaNodeJs size={70} color="#68a063" />,
-      delay: 1.4,
+      delay: 0.8,
     },
   ];
 
@@ -58,7 +56,7 @@ const Skills = () => {
                       },
                     }}
                     key={item.id}
-                    className=" h-40 rounded-md flex gap-4  flex-col justify-center items-center border-2"
+                    className=" h-40 shadow-xl bg-[#1a1919c0] hover:bg-black rounded-md flex gap-4  flex-col justify-center items-center border-2"
                   >
                     {item.icon}
                     <h1 className="">{item.skill}</h1>
@@ -79,7 +77,7 @@ const Skills = () => {
                   y: 0,
                   transition: {
                     duration: 1,
-                    delay: 1.5,
+                    delay: 0.9,
                   },
                 }}
                 className="text-[#fff] text-2xl font-bold"
@@ -96,7 +94,7 @@ const Skills = () => {
                   y: 0,
                   transition: {
                     duration: 1,
-                    delay: 0.8,
+                    delay: 1,
                   },
                 }}
                 className="text-[#fff] text-5xl mt-2 font-bold"
@@ -134,7 +132,7 @@ const Skills = () => {
                     y: 0,
                     transition: {
                       duration: 1,
-                      delay: 1.4,
+                      delay: 1.2,
                     },
                   }}
                   className="mt-4"

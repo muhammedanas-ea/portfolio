@@ -10,64 +10,64 @@ const Works = () => {
     {
       id: 1,
       name: "react",
-      deley: 1.4,
+      deley: 0.8,
     },
     {
       id: 2,
       name: "Express",
-      delay: 1.5,
+      delay: 0.9,
     },
     {
       id: 3,
       name: "MongoDB",
-      delay: 1.6,
+      delay: 1,
     },
     {
       id: 4,
       name: "Tailwind css",
-      delay: 1.7,
+      delay: 1.1,
     },
     {
       id: 5,
       name: "Node.js",
-      delay: 1.8,
+      delay: 1.2,
     },
   ];
   const SecondProject = [
     {
       id: 1,
       name: "CSS",
-      deley: 1.9,
+      deley: 0.7,
     },
     {
       id: 2,
       name: "HTML",
-      delay: 2,
+      delay: 0.8,
     },
     {
       id: 3,
       name: "Ajax",
-      delay: 2.1,
+      delay: 0.9,
     },
     {
       id: 4,
       name: "Bootstrap",
-      delay: 2.2,
+      delay: 1,
     },
     {
       id: 5,
       name: "Node.js",
-      delay: 2.3,
+      delay: 1.1,
     },
     {
       id: 5,
       name: "Express",
-      delay: 2.4,
+      delay: 1.2,
     },
     {
       id: 5,
       name: "MongoDB",
-      delay: 2.5,
+      delay: 1.3,
     },
   ];
   return (
@@ -101,7 +101,7 @@ const Works = () => {
               y: 0,
               transition: {
                 duration: 1,
-                delay: 0.8,
+                delay: 0.6,
               },
             }}
             className="text-[#fff] text-5xl mt-2 font-bold"
@@ -124,7 +124,7 @@ const Works = () => {
                       y: 0,
                       transition: {
                         duration: 1,
-                        delay: 1.1,
+                        delay: 0.7,
                       },
                     }}
                     className="text-3xl font-bold"
@@ -167,16 +167,19 @@ const Works = () => {
                     y: 0,
                     transition: {
                       duration: 1,
-                      delay: 2.1,
+                      delay: 1.3,
                     },
                   }}
                   className="text-[#ffffff81] mt-5"
                 >
-                  {`I'm `}a self-taught MERN stack developer driven by curiosity
-                  and a love for crafting innovative web applications. My
-                  journey as a developer has been driven by an insatiable
-                  curiosity and a strong desire to create meaningful and
-                  innovative web applications.
+                  Travello Resort Booking Management is a web application built
+                  using React, Node.js, Express, and MongoDB. It features
+                  streamlined authentication using Nodemailer and Google login,
+                  enhancing security with JWT tokens. The platform allows image
+                  uploads using Multer for efficient storage and includes
+                  real-time chat functionality using Socket.io. It also
+                  integrates a secure payment gateway through Stripe for
+                  seamless transactions.
                 </motion.p>
               </div>
             </div>
@@ -192,7 +195,7 @@ const Works = () => {
                 y: 0,
                 transition: {
                   duration: 1,
-                  delay: 2.1,
+                  delay: 1.1,
                 },
               }}
               className="md:w-[90%] w-full h-[18rem] mt-8 md:mt-0 rounded-lg border-2"
@@ -217,7 +220,7 @@ const Works = () => {
                 y: 0,
                 transition: {
                   duration: 1,
-                  delay: 1.5,
+                  delay: 0.5,
                 },
               }}
               className="md:w-[90%] w-full mb-8 md:mb-0 flex items-center h-[18rem] rounded-lg border-2"
@@ -233,37 +236,40 @@ const Works = () => {
             <div className="w-full">
               <div className="mt-2">
                 <div>
-                  <motion.h1 
-                  initial={{
-                    opacity: 0,
-                    y: 50,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      duration: 1,
-                      delay: 1.6,
-                    },
-                  }}
-                  className="text-3xl font-bold">Ecommerce Website</motion.h1>
+                  <motion.h1
+                    initial={{
+                      opacity: 0,
+                      y: 50,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 1,
+                        delay: 0.6,
+                      },
+                    }}
+                    className="text-3xl font-bold"
+                  >
+                    Ecommerce Website
+                  </motion.h1>
                 </div>
                 <div className="mt-6">
                   {SecondProject.map((item) => {
                     return (
                       <motion.button
-                      initial={{
-                        opacity: 0,
-                        y: 50,
-                      }}
-                      whileInView={{
-                        opacity: 1,
-                        y: 0,
-                        transition: {
-                          duration: 1,
-                          delay: item.delay,
-                        },
-                      }}
+                        initial={{
+                          opacity: 0,
+                          y: 50,
+                        }}
+                        whileInView={{
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            duration: 1,
+                            delay: item.delay,
+                          },
+                        }}
                         key={item.id}
                         type="button"
                         className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -273,25 +279,24 @@ const Works = () => {
                     );
                   })}
                 </div>
-                <motion.p 
-                initial={{
-                  opacity: 0,
-                  y: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 1,
-                    delay: 2.8,
-                  },
-                }}
-                className="text-[#ffffff81] mt-5">
-                  {`I'm `}a self-taught MERN stack developer driven by curiosity
-                  and a love for crafting innovative web applications. My
-                  journey as a developer has been driven by an insatiable
-                  curiosity and a strong desire to create meaningful and
-                  innovative web applications.
+                <motion.p
+                  initial={{
+                    opacity: 0,
+                    y: 50,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 1,
+                      delay: 1.4,
+                    },
+                  }}
+                  className="text-[#ffffff81] mt-5"
+                >
+                  EBICYCLE is a dynamic e-commerce platform with a user-friendly
+                  interface, secure payments, advanced search, filtering, and
+                  order tracking for a seamless shopping experience
                 </motion.p>
               </div>
             </div>

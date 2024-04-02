@@ -36,7 +36,7 @@ const Hero = () => {
             }}
             transition={{
               duration: 1,
-              delay: 1,
+              delay: 0.6,
             }}
             className="text-[2.1rem]"
           >
@@ -53,7 +53,7 @@ const Hero = () => {
             }}
             transition={{
               duration: 1,
-              delay: 1.5,
+              delay: 0.7,
             }}
             className="w-[65%] text-sm text-[#ffffff81]"
           >
@@ -72,14 +72,14 @@ const Hero = () => {
             }}
             transition={{
               duration: 1,
-              delay: 2,
+              delay: 0.8,
             }}
             className="flex gap-10 mt-6 cursor-pointer"
           >
-            <FaGithub size={30} />
-            <FaLinkedin size={30} />
-            <SiLeetcode size={30} />
-            <FaInstagram size={30} />
+            <FaGithub size={30} className="hover:text-[#00df9a]" />
+            <FaLinkedin size={30} className="hover:text-[#00df9a]" />
+            <SiLeetcode size={30} className="hover:text-[#00df9a]" />
+            <FaInstagram size={30} className="hover:text-[#00df9a]" />
           </motion.div>
         </motion.div>
         <div className="w-1/2 lg:flex items-center justify-center hidden ">
@@ -93,7 +93,7 @@ const Hero = () => {
               y: 0,
               transition: {
                 duration: 1,
-                delay: 0.5,
+                delay: 0.9,
               },
             }}
             className="p-4"
