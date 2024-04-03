@@ -83,7 +83,7 @@ const Contact = () => {
               }}
               className="text-xl"
             >
-              muhammedanasea2000@gmail.com
+              <a className="cursor-pointer" href="mailto:muhammedanasea2000@gmail.com">muhammedanasea2000@gmail.com</a>
             </motion.h3>
           </div>
           <div className="flex justify-center items-center gap-6 mt-6 cursor-pointer">
