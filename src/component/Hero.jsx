@@ -9,25 +9,25 @@ const Hero = () => {
       id: 1,
       icon: <FaGithub size={30} className="hover:text-[#00df9a]" />,
       url: "https://github.com/muhammedanas-ea",
-      delay: 0.8
+      delay: 0.8,
     },
     {
       id: 2,
       icon: <FaLinkedin size={30} className="hover:text-[#00df9a]" />,
       url: "https://www.linkedin.com/in/muhammed-anas-44b218209/",
-      delay:0.9
+      delay: 0.9,
     },
     {
       id: 3,
       icon: <SiLeetcode size={30} className="hover:text-[#00df9a]" />,
       url: "https://leetcode.com/muhammedanasea2000/",
-      delay:1
+      delay: 1,
     },
     {
       id: 4,
       icon: <FaInstagram size={30} className="hover:text-[#00df9a]" />,
       url: "https://www.instagram.com/a.n.a.s.ea?igsh=MXZiMzB5bDE3ZzRhaQ==",
-      delay:1.1
+      delay: 1.1,
     },
   ];
   return (
@@ -81,9 +81,10 @@ const Hero = () => {
             }}
             className="w-[65%] text-sm text-[#ffffff81]"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the {`industry's`} standard dummy
-            text ever since the 1500s.
+            {`I'm`} a self-taught MERN stack developer driven by curiosity and a
+            love for crafting innovative web applications. My journey as a
+            developer has been driven by an insatiable curiosity and a strong
+            desire to create meaningful and innovative web applications.
           </motion.p>
           <div className="flex gap-10 mt-6 cursor-pointer">
             {socialMedia.map((item) => {
