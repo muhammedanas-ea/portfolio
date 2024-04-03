@@ -72,7 +72,7 @@ const Works = () => {
   ];
   return (
     <div className="bg-[#000300]">
-      <div className="text-white py-[100px] container mx-auto max-w-screen-xl  px-6 ">
+      <div className="text-white py-[50px] md:py-[100px] container mx-auto max-w-screen-xl  px-6 ">
         <div>
           <motion.h5
             initial={{

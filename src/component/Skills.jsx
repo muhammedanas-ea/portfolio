@@ -36,7 +36,7 @@ const Skills = () => {
 
   return (
     <div className="bg-[#000300]">
-      <div className="text-white container py-[100px] mx-auto max-w-screen-xl  px-6 ">
+      <div className="text-white container py-[50px] md:py-[100px] mx-auto max-w-screen-xl  px-6 ">
         <div className="flex-col md:flex-row w-full items-center md:flex gap-16">
           <div className="w-full md:w-1/2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
