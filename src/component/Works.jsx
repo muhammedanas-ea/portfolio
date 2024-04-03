@@ -60,12 +60,12 @@ const Works = () => {
       delay: 1.1,
     },
     {
-      id: 5,
+      id: 6,
       name: "Express",
       delay: 1.2,
     },
     {
-      id: 5,
+      id: 7,
       name: "MongoDB",
       delay: 1.3,
     },
@@ -208,7 +208,7 @@ const Works = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex-col md:flex-row md:flex items-center mt-12 gap-16 pt-10">
+        <div className="flex flex-col-reverse md:flex-row md:flex items-center mt-12 gap-16 pt-10">
           <div className="w-full md:w-1/2">
             <motion.div
               initial={{

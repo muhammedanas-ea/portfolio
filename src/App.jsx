@@ -3,6 +3,7 @@ import Hero from "./component/Hero";
 import Skills from "./component/Skills";
 import Works from "./component/Works";
 import Contact from "./component/Contact";
+import Footer from "./component/Footer";
 import "./App.css";
 
 
@@ -14,6 +15,7 @@ export default function App() {
       <Skills/>
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }

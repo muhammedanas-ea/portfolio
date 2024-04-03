@@ -40,7 +40,7 @@ const Skills = () => {
         <div className="flex-col md:flex-row w-full items-center md:flex gap-16">
           <div className="w-full md:w-1/2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
-              {skillsData.map((item) => {
+              {skillsData.map((item,index) => {
                 return (
                   <motion.div
                     initial={{
@@ -55,7 +55,7 @@ const Skills = () => {
                         delay: item.delay,
                       },
                     }}
-                    key={item.id}
+                    key={index}
                     className=" h-40 shadow-xl bg-[#1a1919c0] hover:bg-black rounded-md flex gap-4  flex-col justify-center items-center border-2"
                   >
                     {item.icon}
