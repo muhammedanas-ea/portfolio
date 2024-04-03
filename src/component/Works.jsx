@@ -1,10 +1,9 @@
-// import { FaBootstrap, FaCss3 } from "react-icons/fa";
-// import { TiHtml5 } from "react-icons/ti";
-// import { SiTailwindcss } from "react-icons/si";
-// import { SiExpress, SiMongodb } from "react-icons/si";
 import image from "../../public/Screenshot (56).png";
 import image2 from "../../public/Screenshot (55).png";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
+
 const Works = () => {
   const FirstProject = [
     {
@@ -113,7 +112,7 @@ const Works = () => {
           <div className="w-full md:w-1/2">
             <div className="w-full">
               <div className="mt-2">
-                <div>
+                <div className="flex items-center gap-6">
                   <motion.h1
                     initial={{
                       opacity: 0,
@@ -131,6 +130,28 @@ const Works = () => {
                   >
                     Resort Booking App
                   </motion.h1>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 50,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 1,
+                        delay: 0.8,
+                      },
+                    }}
+                    className="flex items-center gap-3"
+                  >
+                    <a href="https://github.com/muhammedanas-ea/Travello">
+                      <FaGithub size={35} className="hover:text-[#00df9a]" />
+                    </a>
+                    <a href="https://travello-olive.vercel.app/">
+                      <FaLink size={35} className="hover:text-[#00df9a]" />
+                    </a>
+                  </motion.div>
                 </div>
                 <div className="mt-6">
                   {FirstProject.map((item) => {
@@ -235,7 +256,7 @@ const Works = () => {
           <div className="w-full md:w-1/2">
             <div className="w-full">
               <div className="mt-2">
-                <div>
+                <div className="flex items-center gap-6">
                   <motion.h1
                     initial={{
                       opacity: 0,
@@ -253,6 +274,28 @@ const Works = () => {
                   >
                     Ecommerce Website
                   </motion.h1>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 50,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 1,
+                        delay: 0.7,
+                      },
+                    }}
+                    className="flex items-center gap-3"
+                  >
+                    <a href="https://github.com/muhammedanas-ea/ebicycles">
+                      <FaGithub size={35} className="hover:text-[#00df9a]" />
+                    </a>
+                    <a href="https://ebicycle.website/">
+                      <FaLink size={35} className="hover:text-[#00df9a]" />
+                    </a>
+                  </motion.div>
                 </div>
                 <div className="mt-6">
                   {SecondProject.map((item) => {

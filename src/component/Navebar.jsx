@@ -5,6 +5,13 @@ import { Bars3CenterLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const navItems = [
+    { id: 1, text: "Home" },
+    { id: 3, text: "Skills" },
+    { id: 4, text: "Works" },
+    { id: 5, text: "Contact" },
+  ];
+  
   return (
     <div className="bg-[#000300] border-b z-50 border-b-gray-600 fixed left-0 right-0">
       <header className="flex cursor-pointer  text-white items-center mx-auto max-w-screen-xl px-4 justify-between h-20">
@@ -44,12 +51,5 @@ const Navbar = () => {
     </div>
   );
 };
-
-const navItems = [
-  { id: 1, text: "Home" },
-  { id: 3, text: "Skills" },
-  { id: 4, text: "Works" },
-  { id: 5, text: "Contact" },
-];
 
 export default Navbar;
