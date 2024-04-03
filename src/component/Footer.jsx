@@ -6,7 +6,7 @@ const Footer = () => {
     { id: 5, text: "Contact" },
   ];
   return (
-    <footer className="bg-black border-t-2 shadow m-4">
+    <footer className="bg-black border-t-2 shadow">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-100 sm:text-center dark:text-gray-100">
           © 2024 <a className="hover:underline">Muhammed Anas</a>. All Rights
