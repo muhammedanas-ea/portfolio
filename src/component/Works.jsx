@@ -224,7 +224,7 @@ const Works = () => {
             >
               <img
                 src={image}
-                className="object-cover w-full h-full rounded-lg"
+                className="object-fill w-full h-full rounded-lg"
                 alt=""
               />
             </motion.div>
@@ -456,7 +456,7 @@ const Works = () => {
             >
               <img
                 src={image3}
-                className="object-cover w-full h-full rounded-lg"
+                className="object-fill w-full h-full rounded-lg"
                 alt=""
               />
             </motion.div>
