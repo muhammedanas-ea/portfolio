@@ -1,24 +1,29 @@
 import { useState } from "react";
 import Log from "./Log";
 import { Bars3CenterLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import PropTypes from 'prop-types'
 
-const Navbar = () => {
+const Navbar = ({ scrollTosection }) => {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { id: 1, text: "Home" },
-    { id: 3, text: "Skills" },
-    { id: 4, text: "Works" },
-    { id: 5, text: "Contact" },
+    { id: 1, text: "Home", props: "home" },
+    { id: 3, text: "Skills", props: "skills" },
+    { id: 4, text: "Works", props: "works" },
+    { id: 5, text: "Contact", props: "contact" },
   ];
-  
+
   return (
     <div className="bg-[#000300] border-b z-50 border-b-gray-600 fixed left-0 right-0">
       <header className="flex cursor-pointer  text-white items-center mx-auto max-w-screen-xl px-4 justify-between h-20">
         <Log />
         <ul className="hidden uppercase lg:flex space-x-4">
           {navItems.map((item) => (
-            <li key={item.id} className="p-4 hover:text-[#00df9a]">
+            <li
+              onClick={() => scrollTosection(item.props)}
+              key={item.id}
+              className="p-4 hover:text-[#00df9a]"
+            >
               {item.text}
             </li>
           ))}
@@ -40,7 +45,10 @@ const Navbar = () => {
               <li
                 key={item.id}
                 className="p-4 border-b border-b-gray-600 cursor-pointer hover:text-[#00df9a]"
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  scrollTosection(item.props);
+                  setOpen(false);
+                }}
               >
                 {item.text}
               </li>
@@ -50,6 +58,10 @@ const Navbar = () => {
       </header>
     </div>
   );
+};
+
+Navbar.propTypes = {
+  scrollTosection: PropTypes.func.isRequired,
 };
 
 export default Navbar;

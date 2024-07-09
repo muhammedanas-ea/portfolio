@@ -64,29 +64,9 @@ const Hero = () => {
             }}
             className="text-[2.1rem]"
           >
-            MERN Stack <span className="text-[#00df9a]">Developer</span>
+            Mern stack <span className="text-[#00df9a]">Developer</span>
           </motion.p>
-          <motion.p
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 1,
-              delay: 0.7,
-            }}
-            className="w-[65%] text-sm text-[#ffffff81]"
-          >
-            {`I'm`} a self-taught MERN stack developer driven by curiosity and a
-            love for crafting innovative web applications. My journey as a
-            developer has been driven by an insatiable curiosity and a strong
-            desire to create meaningful and innovative web applications.
-          </motion.p>
-          <div className="flex gap-10 mt-6 cursor-pointer">
+          <div className="flex gap-6 mt-6 cursor-pointer">
             {socialMedia.map((item) => {
               return (
                 <motion.a

@@ -40,7 +40,7 @@ const Skills = () => {
         <div className="flex-col md:flex-row w-full items-center md:flex gap-16">
           <div className="w-full md:w-1/2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
-              {skillsData.map((item,index) => {
+              {skillsData.map((item, index) => {
                 return (
                   <motion.div
                     initial={{
@@ -116,33 +116,13 @@ const Skills = () => {
                     },
                   }}
                 >
-                  {`I'm `}a self-taught MERN stack developer driven by curiosity
-                  and a love for crafting innovative web applications. My
-                  journey as a developer has been driven by an insatiable
-                  curiosity and a strong desire to create meaningful and
-                  innovative web applications.
-                </motion.p>
-                <motion.p
-                  initial={{
-                    opacity: 0,
-                    y: 50,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      duration: 1,
-                      delay: 1.2,
-                    },
-                  }}
-                  className="mt-4"
-                >
-                  {" "}
-                  My self-learning skills allow me to quickly absorb and apply
-                  new technologies, making me adaptable to the ever-evolving
-                  tech industry. I approach coding as a continuous journey of
-                  improvement, always eager to embrace and integrate emerging
-                  technologies into my skill set.
+                  Self-taught MERN stack developer driven by curiosity and
+                  commitment to creating innovative web applications. The
+                  journey as a developer has been driven by insatiable and a
+                  strong desire to create meaningful and innovative web
+                  applications. Self-learning skills allow for quick absorption
+                  and application of new technologies, making adaptability to
+                  the ever-evolving tech industry possible.
                 </motion.p>
               </div>
             </div>
