@@ -10,64 +10,64 @@ const Works = () => {
     {
       id: 1,
       name: "react",
-      deley: 0.8,
+      deley: 0.1,
     },
     {
       id: 2,
       name: "Express",
-      delay: 0.9,
+      delay: 0.2,
     },
     {
       id: 3,
       name: "MongoDB",
-      delay: 1,
+      delay: 0.3,
     },
     {
       id: 4,
       name: "Tailwind css",
-      delay: 1.1,
+      delay: 0.4,
     },
     {
       id: 5,
       name: "Node.js",
-      delay: 1.2,
+      delay: 0.5,
     },
   ];
   const SecondProject = [
     {
       id: 1,
       name: "CSS",
-      deley: 0.7,
+      deley: 0.1,
     },
     {
       id: 2,
       name: "HTML",
-      delay: 0.8,
+      delay: 0.2,
     },
     {
       id: 3,
       name: "Ajax",
-      delay: 0.9,
+      delay: 0.3,
     },
     {
       id: 4,
       name: "Bootstrap",
-      delay: 1,
+      delay: 0.4,
     },
     {
       id: 5,
       name: "Node.js",
-      delay: 1.1,
+      delay: 0.5,
     },
     {
       id: 6,
       name: "Express",
-      delay: 1.2,
+      delay: 0.6,
     },
     {
       id: 7,
       name: "MongoDB",
-      delay: 1.3,
+      delay: 0.7,
     },
   ];
   return (
